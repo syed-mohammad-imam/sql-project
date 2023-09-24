@@ -68,12 +68,7 @@ insert into sales values
 
 use supermarket;
 
-/* objective
 
-
-
-
-*/
 
 # 1.Retrieve the total sales for each branch ?
 
@@ -135,29 +130,28 @@ order by branch, gender;
 
 # 7.How does the gross margin percentage vary between Member and Normal customers ?
 
-select
-	customertype,
+select customertype,
     avg(gross_margin) as avg_margin,
     min(gross_margin) as min_margin,
     max(gross_margin) as max_margin
 from
-	sales
+sales
 group by
-	customertype;
+customertype;
 
 
 
 # 8.Are there any seasonal trends in sales based on the date and time of the purchases ?
 
 select
-	monthname(date_transaction) as mth,
-    ROUND(sum(total),0) as total_sales
+monthname(date_transaction) as mth,
+ROUND(sum(total),0) as total_sales
 from
-	sales
+sales
 group by
-	MTH
+MTH
 order by 
-	MTH;
+MTH;
 
 
 # 9.Which branch has the highest average total sales per month in 2019 ?
@@ -166,7 +160,7 @@ order by
 
 with t1 as (
 
-# monthly average sale 
+--- monthly average sale 
 
 select mth, round(avg(total_sales),0) as averagebymonth from(
 select branch, monthname(date_transaction) as mth, sum(total) as total_sales
@@ -174,7 +168,7 @@ from sales
 group by branch, mth) x
 group by mth),
     
-# monthly branch wise sale
+--- monthly branch wise sale
 
 t2 as (
 select branch, monthname(date_transaction) as month_name, round(sum(total),0) as total_monthly_sales
@@ -182,7 +176,7 @@ from sales
 group by branch, month_name)
 
 
-# compate average and monthly sales
+--- compate average and monthly sales
 
 select *
 from t2
