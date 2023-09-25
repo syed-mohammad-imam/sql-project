@@ -1,10 +1,12 @@
 # SQL Supermarket Store Analysis
 
 
-
 ## Project Description
 
 The **SQL Supermarket Store Analysis** project, led by Syed Mohammad Imam, is aimed at analyzing historical sales data from a supermarket company, with a specific emphasis on creating a MySQL database. The objective is to extract valuable insights and trends from the data to facilitate informed decision-making.
+
+![200 (1)](https://github.com/syed-mohammad-imam/sql-project/assets/106855181/0790b9b7-464e-4aa2-a95f-2f8f505aa487)
+
 
 ## Table of Contents
 
@@ -32,6 +34,9 @@ Once the project is set up, you can use it to:
 - Conduct predictive analytics on supermarket sales data.
 
 For usage examples and queries, refer to the project's SQL files in the `queries` directory.
+![mysql](https://github.com/syed-mohammad-imam/sql-project/assets/106855181/af71de92-05a0-4aa2-96ec-1ad060b0368a)
+
+
 
 ## Database Configuration
 
@@ -48,8 +53,6 @@ database:
   dbname: your_database_name
 
 
-
-![mysql](https://github.com/syed-mohammad-imam/sql-project/assets/106855181/79c5d6b8-dcb2-4820-b77c-ed1fa119508b)
 
 
 
