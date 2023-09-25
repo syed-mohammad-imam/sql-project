@@ -1,4 +1,4 @@
-# sql-project on supermarket analysis
+## sql-Supermarket analysis
 
 ## Project Objective:
 
@@ -15,3 +15,6 @@
   ER diagram of dataset:
 
   ![image](https://github.com/syed-mohammad-imam/sql-project/assets/106855181/b8ea289d-4f57-49df-93f2-0064387827d8)
+
+###  System used 
+![mysql](https://github.com/syed-mohammad-imam/sql-project/assets/106855181/9cba023a-bcab-4799-a92f-408be7872364)
